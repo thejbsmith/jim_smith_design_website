@@ -33,6 +33,12 @@ group :development, :test do
 
   # Load .env file into ENV vars in development
   gem 'dotenv-rails'
+
+  # Rspec Testing Framework
+  gem 'rspec-rails', '~> 3.0'
+
+  # Generate Factories for tests
+  gem 'factory_girl_rails'
 end
 
 group :development do
