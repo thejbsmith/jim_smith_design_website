@@ -1,14 +1,38 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>JimSmithDesignWebsite</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Jim Smith Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<%= yield %>
+    <!-- Start Favicons -->
+    <link rel="shortcut icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-touch-icon-114x114.png">
+    <!-- End Favicons -->
 
-</body>
+    <!-- Start Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,200,400italic,600,600italic' rel='stylesheet' type='text/css'>
+    <!-- End Fonts -->
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <%= csrf_meta_tags %>
+
+    <!--[if lt IE 9]>
+      <%= javascript_include_tag 'respond.min' %>
+    <![endif]-->
+
+  </head>
+
+  <body data-spy="scroll" data-target="#main-nav" data-offset="400">
+    <%= render partial: 'layouts/main_navigation' %>
+    <%= yield %>
+    <%= render partial: 'layouts/contact_form' %>
+    <%= render partial: 'layouts/footer' %>
+  </body>
+
 </html>

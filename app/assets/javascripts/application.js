@@ -12,5 +12,15 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+//= require bootstrap-sprockets
+//= require bootstrap
+//= require modernizr.min
+//= require jquery.easing.1.3
+//= require jquery.scrollto
+//= require jquery.fittext
+//= require jquery.flexslider
+//= require jquery.masonry
+//= require waypoints
+//= require jquery.label_better
+//= require jquery.easypiechart
+//= require jim_smith_design

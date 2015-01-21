@@ -17,6 +17,9 @@ gem 'unicorn'
 # Form DSL
 gem 'simple_form'
 
+# CSS Frameworks
+gem 'bootstrap-sass'
+
 group :doc do
   gem 'sdoc', '~> 0.4.0'
 end
