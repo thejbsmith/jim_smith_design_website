@@ -23,4 +23,5 @@
 //= require waypoints
 //= require jquery.label_better
 //= require jquery.easypiechart
+//= require contact_form
 //= require jim_smith_design

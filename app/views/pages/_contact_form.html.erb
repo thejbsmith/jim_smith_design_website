@@ -1,0 +1,30 @@
+<!-- Start Contact Form -->
+<section id="contact" class="dark-bg light-typo padding-top">
+  <div class="container">
+    <header class="section-header text-center">
+      <h1 class="scrollimation scale-in">Drop Me a Line</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br/> Aenean purus felis, condimentum et tempor in, commodo id nibh. Fusce a lacus arcu.</p>
+    </header>
+
+    <%= simple_form_for :contact, url: contact_path, method: 'post', html: { id: 'contact-form', class: 'bl_form' } do |f| %>
+      <div class="field-wrap scrollimation scale-in d1">
+        <%= f.input :name, input_html: { class: 'label_better required', placeholder: 'Name', data: { :'new-placeholder' => 'Name', :'error-empty' => '*Enter your name' } }, label: false, wrapper: false %>
+      </div>
+
+      <div class="field-wrap scrollimation scale-in d1">
+        <%= f.input :email, input_html: { class: 'label_better required', placeholder: 'Email', data: { :'new-placeholder' => 'Email', :'error-empty' => '*Enter your email', :'error-invalid' => 'x Invalid email' } }, label: false, wrapper: false %>
+      </div>
+
+      <div class="field-wrap scrollimation scale-in d1">
+        <%= f.input :message, as: :text, input_html: { class: 'label_better required', placeholder: 'Message', data: { :'new-placeholder' => 'Message', :'error-empty' => '*Enter your message' } }, label: false, wrapper: false %>
+      </div>
+
+      <p class="text-center scrollimation scale-in d1">
+        <%= button_tag( type: 'submit', class: "btn btn-meflat icon-left", data: { :'error-message' => 'Error!', :'sending-message' => 'Sending...', :'ok-message' => 'Message Sent' } ) do %>
+          <i class="fa fa-paper-plane"></i> Send Message
+        <% end %>
+      </p>
+    <% end %>
+  </div>
+</section>
+<!-- End Contact Form -->

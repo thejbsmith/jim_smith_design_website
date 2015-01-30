@@ -47,6 +47,12 @@ end
 group :development do
   # Manage Procfile based application (start rails server similar to Heroku)
   gem 'foreman'
+
+  # Pry for rails
+  gem 'pry-rails'
+
+  # View emails in browser
+  gem 'letter_opener_web', '~> 1.2.0'
 end
 
 group :test do

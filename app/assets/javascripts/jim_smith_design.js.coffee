@@ -191,7 +191,7 @@ $ ->
 
 	$(".label_better").label_better
 	  easing: "bounce"
-	  offset: 5
+	  offset: 10
 
 
 	# # # # # # #
